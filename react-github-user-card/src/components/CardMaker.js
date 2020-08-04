@@ -15,7 +15,6 @@ export default function CardMaker(props) {
 				<p>{"Following: " + props.userData.following}</p>
 				<p>{"Bio: " + props.userData.bio}</p>
 			</div>
-			<button onClick={() => props.handleFollowerChange()}>View Followers</button>
 		</div>
 	);
 }

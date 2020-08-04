@@ -42,13 +42,18 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<h1>GitHub User Info</h1>
-				<CardMaker
-					userData={this.state.userData}
+			<div className="main-div">
+				<img
+					className="github-logo"
+					src="https://saas.whitesourcesoftware.com/Wss/github/github-logo-white.png"
+					alt="github logo"
+				/>
+				<h1>User Info</h1>
+				<CardMaker userData={this.state.userData} />
+				<Followers
+					followers={this.state.followers}
 					handleFollowerChange={this.handleFollowerChange}
 				/>
-				<Followers followers={this.state.followers} />
 			</div>
 		);
 	}

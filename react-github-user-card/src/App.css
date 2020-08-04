@@ -46,6 +46,10 @@
    License: none (public domain)
 */
 
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -102,7 +106,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-repeat: no-repeat;
 }
 .container {
   max-width: 800px;
@@ -134,7 +139,7 @@ body {
 }
 
 .card {
-  width: 100%;
+  width: 80%;
   padding: 20px;
   display: flex;
   border-radius: 5px;
@@ -173,3 +178,50 @@ body {
 }
 
 /* END OF STYLING FROM OLD PROJECT */
+
+
+.main-div {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-logo{
+  width: 100px;
+}
+
+.follower-div {
+  /* border: 2px solid violet; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.follower-btn {
+  background-color: unset;
+  border: unset;
+  color: white;
+  height: 50px;
+  width: 200px;
+  font-size: 2rem;
+}
+
+.followerCard {
+  width: 30%;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  margin: 1%;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 2%;
+  /* border: 2px solid green; */
+}
+
+.followerCard img {
+  width: 90px;
+}
