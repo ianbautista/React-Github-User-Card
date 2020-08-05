@@ -225,3 +225,14 @@ body {
 .followerCard img {
   width: 90px;
 }
+
+.main-usercard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img.graph {
+
+}
